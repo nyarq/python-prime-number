@@ -1,17 +1,4 @@
-# 1부터 100 사이의 자연수 중 소수 구하기
-primes = []
-
+# prime-number.py - 소수 구하기 프로그램 기본 틀
+print("1부터 100 사이의 소수를 구합니다.")
 for num in range(1, 101):
-    if num < 2:
-        continue
-    is_prime = True
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            is_prime = False
-            break
-    if is_prime:
-        primes.append(num)
-
-print("1부터 100 사이의 소수:")
-print(primes)
-print(f"\n총 개수: {len(primes)}개")
+    pass # 기본 반복문 틀 작성
